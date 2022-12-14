@@ -183,10 +183,17 @@
         </div>
         <div id="form-container">
           <form action="https://formspree.io/f/mrgdnqrz" method="post" class="form-entries">
-            <input type="text" class="fill-area" id="fname" name="fname" maxlength="30" required placeholder="Full Name">
-            <input type="text" class="fill-area" id="lname" name="lname" required placeholder="Last Name">
-            <input type="email" class="fill-area" id="address" name="email" required placeholder="Email Address">
-            <textarea rows="8" id="message" maxlength="500" required placeholder="Enter text here"></textarea>
+            <div class="mb-3">
+                <label for="fullname" class="form-label">Fullname</label>
+                <input type="text" class="form-control w-25" id="fullname">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control w-25" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+            <div>
+                <textarea class="w-25" rows="2" id="message" maxlength="500" required placeholder="Enter text here"></textarea>
+            </div>
             <input class="btn btn-success" id="submit" type="submit" value="Get in touch">
           </form>             
         </div>
